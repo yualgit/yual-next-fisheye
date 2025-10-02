@@ -199,7 +199,7 @@ export default function FisheyeTextScene({
 
       // draw two stacks so scrolling is seamless
       for (let pass = -1; pass <= 0; pass++) {
-        let y = baseY + pass * blockHeight;
+        const y = baseY + pass * blockHeight;
         // fade edges top/bottom
         for (let i = 0; i < lines.length; i++) {
           const lx = w * 0.5;
